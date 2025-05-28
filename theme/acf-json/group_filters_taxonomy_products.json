@@ -1,0 +1,155 @@
+{
+    "key": "group_filters_taxonomy_products",
+    "title": "Filtro Atributos de Producto",
+    "fields": [
+        {
+            "key": "field_product_brand",
+            "label": "Marca",
+            "name": "product_brand",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "product_brand",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_product_taxonomy_material",
+            "label": "Material",
+            "name": "material",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "material",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_product_taxonomy_genero",
+            "label": "Género",
+            "name": "genero",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "genero",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_product_taxonomy_uso",
+            "label": "Uso",
+            "name": "uso",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "uso",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_product_cat",
+            "label": "Categoria",
+            "name": "product_cat",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "product_cat",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "page-custom-search.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1742295179
+}

@@ -10,6 +10,7 @@ Implementación de **filtros AJAX para WooCommerce** y plantilla personalizada d
 ## Requisitos
 
 - WordPress ≥ 6.7.2
+- Bootstrap ≥ 5.3.2
 - [WooCommerce](https://woocommerce.com/es/)
 - [ACF Pro](https://www.advancedcustomfields.com/pro/)
 - Editor clásico (Classic Editor)
@@ -67,5 +68,6 @@ wp-ajax-filters/
 
 2. Asigna el grupo a la plantilla de página `page-custom-search.php`.
 3. Puedes personalizar los estilos de la tienda en `assets/css/woocommerce.css`.
+4. Añade una imagen por defecto para los productos sin imagen en `assets/img/woocommerce-default-product.jpg`.
 
 > [!NOTE] > _Las **taxonomías** utilizadas en este repositorio son de **ejemplo**. Pueden ser reemplazadas por las tuyas._

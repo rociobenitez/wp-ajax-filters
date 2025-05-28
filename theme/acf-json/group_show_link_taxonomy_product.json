@@ -1,0 +1,46 @@
+{
+    "key": "group_show_link_taxonomy_product",
+    "title": "Mostrar enlace de la categoría",
+    "fields": [
+        {
+            "key": "field_show_link_taxonomy_product",
+            "label": "Mostrar enlace",
+            "name": "show_link",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Indicar si se mostrará el enlace de la categoría en las migas de pan.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "product_cat"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1745393817
+}
