@@ -1,13 +1,11 @@
-# WooCommerce AJAX Filters & ACF Pro Custom Search
+# WooCommerce AJAX Filters
 
-Implementación de filtros AJAX para WooCommerce y plantilla de “Búsquedas Custom” usando ACF Pro, que permite crear facetas combinadas (landings) basadas en dos o más taxonomías de producto (por ejemplo: “gafas de sol” + “gafas infantiles”).
+Implementación de **filtros AJAX para WooCommerce** y plantilla personalizada de _“Búsquedas Custom”_ usando **ACF Pro**, que permite crear facetas combinadas (landings) basadas en dos o más taxonomías de producto (por ejemplo: “gafas de sol” + “gafas infantiles”).
 
 ## Casos de uso
 
-1. **Shop & categorías nativas**  
-   Gestión dinámica de filtros en `archive-product.php`.
-2. **Plantilla “Búsquedas Custom”** (`page-custom-search.php`)
-   Página que inicia con un conjunto de IDs definido por campos ACF e incluye filtros AJAX.
+1. **Página de categorías/taxonomías de producto**: Gestión dinámica de filtros en `archive-product.php`.
+2. **Plantilla _“Búsquedas Custom”_** (`page-custom-search.php`): Página que inicia con un conjunto de IDs definido por campos ACF e incluye filtros AJAX.
 
 ## Requisitos
 
@@ -39,7 +37,7 @@ wp-ajax-filters/
     └── archive-product.php   # Plantilla de categorías/taxonomías
 ```
 
-> **Nota:** El resto de funciones del theme (configuración, CPTs, helpers genéricos, etc.) se omiten aquí. Se asume que vivirá en otros archivos documentados por separado.
+> [!NOTE] > _El resto de funciones del theme (configuración, CPTs, helpers genéricos, etc.) se omiten aquí. Solo se presenta la lógica y archivos relacionados con los filtros AJAX._
 
 ## Funcionalidades
 
@@ -55,14 +53,11 @@ wp-ajax-filters/
    mv wp-ajax-filters /wp-content/themes/your-theme
    ```
 2. Activa el theme en _Apariencia → Themes_.
-3. Asegúrate de tener instalados y activos:
-   - Classic Editor
-   - WooCommerce
-   - Advanced Custom Fields PRO
+3. Asegúrate de tener instalados y activos los [plugins requeridos](#requisitos).
 
 ## Configuración
 
-1. En ACF Pro crea un grupo de campos (ubicado en “Búsquedas Custom”) con selectores de taxonomías:
+1. En ACF Pro crea un grupo de campos (ubicado en _“Búsquedas Custom”_) con selectores de taxonomías:
 
    - `product_cat`
    - `product_brand`
@@ -71,6 +66,6 @@ wp-ajax-filters/
    - `uso`
 
 2. Asigna el grupo a la plantilla de página `page-custom-search.php`.
-3. Personaliza estilos en `assets/css/woocommerce.css`.
+3. Puedes personalizar los estilos de la tienda en `assets/css/woocommerce.css`.
 
-> **Nota:** Las taxonomías utilizadas en este repositorio son de ejemplo. Pueden ser reemplazadas por las tuyas.
+> [!NOTE] > _Las **taxonomías** utilizadas en este repositorio son de **ejemplo**. Pueden ser reemplazadas por las tuyas._
