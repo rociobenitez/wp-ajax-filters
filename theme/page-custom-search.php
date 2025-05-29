@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Template Name: Búsquedas Custom
  *
@@ -13,11 +12,11 @@ $contenido = get_the_content();
 
 // Query inicial
 $full_query = build_initial_query_page_custom($fields);
-$initial_product_ids = wp_list_pluck($full_query->posts, 'ID');
+$initial_product_ids = wp_list_pluck( $full_query->posts, 'ID' );
 
 // Query con paginación (solo primera página)
-$paged = max(1, get_query_var('paged'));
-$custom_query = build_filtered_query($fields, $paged, $initial_product_ids);
+$paged = max( 1, get_query_var('paged') );
+$custom_query = build_filtered_query( $fields, $paged, $initial_product_ids );
 ?>
 
 <div class="container">
